@@ -1,0 +1,31 @@
+{
+  "name": "headers-microservice",
+  "version": "1.0.0",
+  "description": "Microservice base mvc",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production PORT=80 node index",
+    "dev": "nodemon index.js",
+    "test": "NODE_ENV=testing $OPT --file './tests/setup.js' --reporter spec --recursive tests /**/*.test.js"
+  },
+  "author": "aramone@headers.com.ar",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "lodash": "^4.17.19",
+    "mysql": "^2.17.1",
+    "node-fetch": "^2.6.1",
+    "sequelize": "^6.5.0",
+    "uuid": "^3.3.3",
+    "x-xss-protection": "^1.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
